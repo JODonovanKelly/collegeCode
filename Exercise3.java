@@ -1,8 +1,6 @@
 /**
  * @(#)Exercise3.java
- *
- *
- * @author 
+ * @Jonathan O'Donovan Kelly 
  * @version 1.00 2019/9/20
  */
 
