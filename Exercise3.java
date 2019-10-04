@@ -3,25 +3,35 @@
  *
  *
  * @author 
- * @version 1.00 2019/10/2
+ * @version 1.00 2019/9/20
  */
 
 import java.util.Scanner;
 public class Exercise3 {
 
     public static void main(String args[]) {
-    	float area;
-    	final float HECTARES = 0.4046f;
+    	
+    	Float weight,height;
+    	String name, address;
     	
     	Scanner input = new Scanner(System.in);
     	
-    	System.out.println("Please enter an area in acres: ");
-    	area = input.nextFloat();
+    	System.out.print("Name: ");
+    	name = input.nextLine();
     	
-    	String hectares = ("\nThis is equivalent to " + String.format("%.3f",(area*HECTARES)) + " hectares");
+    	System.out.print("Weight: ");
+    	weight = input.nextFloat();
     	
-    	System.out.println(hectares);
-    }
+    	System.out.print("Height: ");
+    	height = input.nextFloat();
+    	
+    	input.nextLine();
+    	
+    	System.out.print("Address: ");
+    	address = input.nextLine();
+    	
+    	System.out.println("\n\n\nName: "+name+"\nWeight: "+weight+"kg"+"\nHeight: "+height+"cm"+"\nAddress: "+address+"\n\n\n");
+       }
     
     
 }

@@ -1,30 +1,20 @@
 /**
- * @(#)Exercise 2.java
- *
- *
- * @author 
- * @version 1.00 2019/10/2
+ * @(#)Exercise2.java
+ * @Jonathan O'Donovan Kelly 
+ * @version 1.00 2019/9/20
  */
 
-import java.util.Scanner;
+
 public class Exercise2 {
 
     public static void main(String args[]) {
-    float radius, height;
-    final float PI = 3.142f;
-    
-    Scanner input = new Scanner(System.in);
-    
-    System.out.println("Please enter the radius of the cylinder: ");
-    radius = input.nextFloat();
+    	int pages = 317, year = 1999;
+    	String author = "J.K. Rowling", title = "Harry Potter and the Prisoner of Azkaban", name = "Author:", subject = "Title:", sheets = "Pages:", date = "Year:", cost = "Price:", eur = "EUR";
+    	float price = 35.50f;
     	
-   	System.out.println("Please enter the height of the cylinder: ");
-    height = input.nextFloat();
-    	
-    String cylinder = ("\n\n=====Calculation Result=====\n\nVolume of cylinder is " + String.format("%.2f",(PI*(radius*radius)*height)) + " meters squared");
-    	
-    System.out.println(cylinder);	
-    	
+    	String formatString = String.format("%-10s%-1s\n%-10s%-1s\n%-10s%-1d\n%-10s%-1d\n%-10s%-3s%.2f", subject,title,name,author,sheets,pages,date,year,cost,eur,price);
+    		
+    	System.out.println(formatString) ;
     }
     
     
