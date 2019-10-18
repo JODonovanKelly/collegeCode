@@ -1,20 +1,34 @@
 /**
  * @(#)Exercise2.java
- * @Jonathan O'Donovan Kelly 
- * @version 1.00 2019/9/20
+ *
+ *
+ * @author 
+ * @version 1.00 2019/10/18
  */
 
-
+import java.util.Scanner;
 public class Exercise2 {
 
     public static void main(String args[]) {
-    	int pages = 317, year = 1999;
-    	String author = "J.K. Rowling", title = "Harry Potter and the Prisoner of Azkaban", name = "Author:", subject = "Title:", sheets = "Pages:", date = "Year:", cost = "Price:", eur = "EUR";
-    	float price = 35.50f;
+    	char character;
+    	String characterAsString;
     	
-    	String formatString = String.format("%-10s%-1s\n%-10s%-1s\n%-10s%-1d\n%-10s%-1d\n%-10s%-3s%.2f", subject,title,name,author,sheets,pages,date,year,cost,eur,price);
-    		
-    	System.out.println(formatString) ;
+    	Scanner input = new Scanner(System.in);
+    	
+    	System.out.print("Please enter a keyboard character: ");
+    	characterAsString = input.nextLine();
+    	
+    	character = characterAsString.charAt(0);
+    	
+    	if(character >= '0' && character <= '9')
+    		System.out.println("\nYou entered a digit");
+    	else if (character >= 'a' && character <= 'z')
+    		System.out.println("\nYou entered a lowercase letter");
+    	else if (character >= 'A' && character <= 'Z')
+    		System.out.println("\nYou entered an uppercase letter");
+    	else
+    		System.out.println("\nYou did not enter a digit"); 		
+    			
     }
     
     
