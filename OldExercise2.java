@@ -1,11 +1,11 @@
 /**
- * @(#)Exercise2.java
+ * @(#)OldExercise2.java
  * @Jonathan O'Donovan Kelly 
  * @version 1.00 2019/9/20
  */
 
 
-public class Exercise2 {
+public class OldExercise2 {
 
     public static void main(String args[]) {
     	int pages = 317, year = 1999;
